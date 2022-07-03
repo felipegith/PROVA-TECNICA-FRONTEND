@@ -1,6 +1,6 @@
 # Orientação para execução do projeto
 
-1) Em um diretório no computador, use o comando "git clone" com o link na aba "CODE"
+1) Em um diretório no computador abra o git bash e use o comando "git clone" com o link na aba "CODE"
     git clone https://github.com/felipegith/PROVA-TECNICA-FRONTEND.git
 
 2) Entre na pasta do repositório e no terminal utilize o comando:
