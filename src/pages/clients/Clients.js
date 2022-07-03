@@ -55,7 +55,7 @@ export default function Clients() {
 
                             <div className="container_cliente_box_row">
                                 <AiOutlineException size={20} color="#000" />
-                                <p className="text_client_box">{Intl.DateTimeFormat('pt-BR').format(new Date(client?.dataNascimento.split("T", 10)[0]))}</p>
+                                <p className="text_client_box"> {client?.dataNascimento.split("T", 10)[0]}{/* {Intl.DateTimeFormat('pt-BR').format(new Date(client?.dataNascimento.split("T", 10)[0]))} */}</p>
                                 <div />
                             </div>
                             <div className="container_client_options">
@@ -64,7 +64,6 @@ export default function Clients() {
                                 </div>
 
                                 <div className="container_client_update">
-                                    {/* <input type="submit" value="Atualizar" className="input_update" /> */}
                                     <button className='input_update_roww'>
                                         <Link to={`/atualizar/${client?.id}`} className="text_input_row">Atualizar</Link>
                                     </button>

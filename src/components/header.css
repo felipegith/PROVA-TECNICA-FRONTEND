@@ -31,8 +31,13 @@
 
 }
 
+.container_header_text_link {
+    width: 5%;
+
+}
+
 .logo_header {
-    width: 3%;
+    width: 40%;
 }
 
 .text_header_logo {

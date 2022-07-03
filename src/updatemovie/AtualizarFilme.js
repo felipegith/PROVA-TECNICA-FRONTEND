@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 
 import Logo from '../assets/logo.png'
 import Header from "../components/Header"
@@ -12,6 +12,7 @@ export default function AtualizarFilme() {
     const [lancamento, setLancamento] = useState('')
 
     const { id } = useParams()
+    const navigate = useNavigate()
 
     function buscarFilme() {
         api.get(`Filme/id/${id}`).then(response => {
@@ -43,6 +44,7 @@ export default function AtualizarFilme() {
         }
         api.put("Filme", data).then(() => {
             alert("Filme atualizado com sucesso.")
+            navigate("/filmes")
         }).catch(() => {
             alert("Não foi possível atualizar este filme. Tente novamente.")
         })

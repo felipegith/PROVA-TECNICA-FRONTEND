@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+
 import './detail.css'
 import api from '../../services/api'
 
@@ -15,7 +16,7 @@ export default function Detail() {
     const [cpf, setCpf] = useState('')
     const [dados, setDados] = useState(null)
     const [dadoss, setDadoss] = useState([])
-    const [teste, setTeste] = useState(false)
+    const [load, setLoad] = useState(false)
 
     useEffect(() => { }, [dados])
 
@@ -31,7 +32,7 @@ export default function Detail() {
         api.get(`Cliente/${cpf}`, data).then(response => {
             setDados(response.data)
             setDadoss(response.data)
-            setTeste(true)
+            setLoad(true)
             console.log(response.data)
         }).catch((error) => {
             return alert(`Cpf ${cpf} não foi encontrado.`)
@@ -59,7 +60,7 @@ export default function Detail() {
                 <input type="submit" value="Pesquisar" className='input_submit_detail' />
             </form>
 
-            {teste ? <div className='container_detail_box'>
+            {load ? <div className='container_detail_box'>
                 <div className="container_detail_box_row ">
                     <AiOutlineUser size={20} color="#000" />
                     <p className="text_detail_box">{dados?.name}</p>
@@ -80,7 +81,7 @@ export default function Detail() {
                 {dados?.locacoes.map(item => {
                     return (
                         <div className='container_content_box_row_data'>
-                            <p className='text_detail_loc'>{dados?.name} você alugou filme(s) em: {Intl.DateTimeFormat('pt-BR').format(new Date(item.dataLocacao.split("T", 10)[0]))} e precisa entrega-los em {Intl.DateTimeFormat('pt-BR').format(new Date(item.dataDevolucao.split("T", 10)[0]))} </p>
+                            <p className='text_detail_loc'>{dados?.name} você alugou filme(s) em: {item.dataLocacao.split("T", 10)[0]} {/* {Intl.DateTimeFormat('pt-BR').format(new Date(item.dataLocacao.split("T", 10)[0])) + 1} */} e precisa entrega-los em {item.dataDevolucao.split("T", 10)[0]} {/* {Intl.DateTimeFormat('pt-BR').format(new Date(item.dataDevolucao.split("T", 10)[0]))} */} </p>
                             <div className='container_content_box_update_row'>
                                 <Link to={`/atualizarlocacao/${item.id}`} className='text_content_box_update_row'>Atualizar</Link>
                                 <p className='text_content_box_delete_row' onClick={() => removerLocacao(item.id)}>Excluir</p>

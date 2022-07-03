@@ -1,0 +1,13 @@
+.input_submit_signin {
+    width: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #284180;
+    margin-top: 3%;
+    background-color: #284180;
+
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 0.8rem;
+}

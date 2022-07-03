@@ -12,13 +12,14 @@ export default function Addmovie() {
     const [classificacaoIndicativa, setClassificacaoIndicativa] = useState('')
     const [lancamento, setLancamento] = useState('')
 
+
     function cadastrarFilmes(e) {
         e.preventDefault()
 
         if (titulo == '') {
             return alert('Informe o nome do filme')
         }
-        if (classificacaoIndicativa == 0 || classificacaoIndicativa == '') {
+        if (classificacaoIndicativa == '') {
             return alert('Informe uma classificação')
         }
         if (lancamento == '') {

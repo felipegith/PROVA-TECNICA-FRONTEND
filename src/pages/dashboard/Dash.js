@@ -1,10 +1,12 @@
 
 import { useEffect, useState } from 'react';
-import { AiOutlineUser, AiOutlineVideoCamera, AiOutlineException } from "react-icons/ai";
+import { AiOutlineUser, AiOutlineVideoCamera } from "react-icons/ai";
 
 import './dash.css'
-import Header from "../../components/Header";
+
 import Logo from '../../assets/logo.png'
+import Header from "../../components/Header";
+
 import api from '../../services/api';
 
 
@@ -60,6 +62,7 @@ export default function Dash() {
     function todosFilmesAlugados() {
         api.get("Locacao").then(response => {
             setFilmesAlugados(response.data)
+            console.log(response.data)
         }).catch(() => {
             alert("Não foi possível visualizar os filmes alugados pela locadora")
         })
@@ -172,7 +175,7 @@ export default function Dash() {
                                 <div className='container_dash_devo'>
                                     <div className='container_dash_devo_row'>
                                         <AiOutlineUser />
-                                        <p className='text_dash_data'>{item.fl?.titulo}</p>
+                                        <p className='text_dash_data'>{item?.titulo}</p>
                                         <div />
                                     </div>
                                 </div>

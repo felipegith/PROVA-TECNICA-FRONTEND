@@ -1,9 +1,10 @@
 
-
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+
 import Logo from '../../assets/logo.png'
 import Header from '../../components/Header'
+
 import api from '../../services/api'
 
 export default function AtualizarLocacao() {
@@ -11,6 +12,7 @@ export default function AtualizarLocacao() {
     const [dataLocacao, setDataLocacao] = useState("")
     const [id_Cliente, setId_Cliente] = useState("")
     const [id_Filme, setId_Filme] = useState("")
+
     const { id } = useParams()
 
     useEffect(() => {

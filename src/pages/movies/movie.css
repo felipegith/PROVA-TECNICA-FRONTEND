@@ -144,7 +144,7 @@
 .text_main_movie_title {
     font-size: 0.8rem;
     font-weight: 500;
-    /* color: #FFF; */
+
 }
 
 .text_main_movie_content {
@@ -152,17 +152,33 @@
     font-weight: 500;
     width: 70%;
     text-align: center
-        /* color: #FFF; */
+}
+
+.text_main_movie_content_classification {
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: 70%;
+    text-align: center;
+    color: #FFF;
+
 }
 
 .text_container_main_movies {
     font-size: 0.8rem;
     color: #284180;
+    font-weight: 400;
 }
 
 .text_link_movie {
     text-decoration: none;
     color: #FFF;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.text_link_search_movie {
+    text-decoration: none;
+    color: #284180;
     font-size: 0.8rem;
     font-weight: 600;
 }

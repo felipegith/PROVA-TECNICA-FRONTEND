@@ -34,10 +34,10 @@ export default function Movies() {
 
     return (
         <div id="container_movies">
-            <Header img={Logo} text="Ta afim de assistir um filme?" content="Fique por dentro do nosso catálogo de filmes" />
+            <Header img={Logo} text="Ta a fim de assistir um filme?" content="Fique por dentro do nosso catálogo de filmes" />
             <main className='container_main_movies'>
                 <div className='container_main_movies_text'>
-                    <h1 className='text_container_main_movies'>Esta buscando algum filme especifico? <Link to="/filme">Clique aqui</Link></h1>
+                    <h1 className='text_container_main_movies'>Esta buscando algum filme especifico? <Link to="/filme" className='text_link_search_movie'>Clique aqui</Link></h1>
                 </div>
 
                 {filmes.map(filme => {
@@ -57,7 +57,7 @@ export default function Movies() {
                                     <div className='container_main_movies_box_right_row'>
                                         <AiOutlineStop size={20} color="#284180" />
                                         <div className='container_main_movies_classification'>
-                                            <span className='text_main_movie_content'>{filme.classificacaoIndicativa}</span>
+                                            <span className='text_main_movie_content_classification'>{filme.classificacaoIndicativa}</span>
                                         </div>
                                         <div />
                                     </div>

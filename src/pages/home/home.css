@@ -45,6 +45,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+
 }
 
 .container_home_main {
@@ -155,6 +158,7 @@
     font-weight: 700;
     color: #284180;
 }
+
 
 .text_home_main_left_content {
     color: #284180;

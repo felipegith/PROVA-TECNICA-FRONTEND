@@ -39,8 +39,7 @@ export default function Signup() {
 
         api.post(`Cliente`, data).then(() => {
             alert(`Parabens ${name}, seu cadastro foi realizado com sucesso`)
-            localStorage.setItem("NOME", name)
-            navigate("/")
+            navigate("/entrar")
         }).catch(() => {
             alert('Não foi possível realizar seu cadastro. Tente novamente')
         })
