@@ -1,0 +1,78 @@
+.input_submit_newmovie {
+
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #284180;
+    margin-top: 3%;
+    background-color: #284180;
+
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.container_confirm_movie {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container_confirm_movie_box {
+    width: 260px;
+    height: 150px;
+    border: 1px solid #284180;
+    border-radius: 10px;
+
+    display: flex;
+
+
+}
+
+.container_confirm_box_row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.container_confirm_box_left {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container_confirm_box_rigth {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img_rolls_movie_left {
+    width: 80%;
+}
+
+.text_confirm_box {
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #284180;
+}
+
+.text_title_confirm_movie_title {
+    font-size: 0.8rem;
+    font-weight: 500;
+}

@@ -1,0 +1,37 @@
+#container_addmovie {
+    width: 100%;
+}
+
+.container_addmovie_form {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container_addmovie_inputs {
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text_addmovie_input_label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.input_submit_addmovie {
+    width: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #284180;
+    margin-top: 3%;
+    background-color: #284180;
+
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 0.8rem;
+}

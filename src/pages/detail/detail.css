@@ -1,0 +1,132 @@
+#container_detail {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.container_detail_form {
+
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container_detail_inputs {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.text_detail_input_label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.input_submit_detail {
+    width: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #284180;
+    margin-top: 3%;
+    background-color: #284180;
+
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.container_detail_box {
+    width: 500px;
+    padding: 2%;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 1px solid #284180;
+    border-radius: 10px;
+
+    overflow: scroll;
+}
+
+.container_content_box_row_data {
+
+
+    margin-bottom: 3%;
+}
+
+.container_detail_box_row {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    margin-bottom: 2%;
+}
+
+.container_content_box_update_row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+
+
+}
+
+.input_submit_detail {
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #284180;
+    margin-top: 3%;
+    background-color: #284180;
+
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.text_detail_box {
+    font-size: 0.8rem;
+    color: #284180;
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+}
+
+.text_detail_loc {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #284180;
+    font-weight: 600;
+}
+
+.text_detail_loc {
+    margin-bottom: 3%;
+}
+
+.text_content_box_update_row {
+    margin-left: 5%;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.text_content_box_delete_row {
+    margin-left: 5%;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #F88282;
+
+    cursor: pointer;
+}

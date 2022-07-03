@@ -1,0 +1,69 @@
+.input_submit_movie {
+
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #284180;
+    margin-top: 3%;
+    background-color: #284180;
+
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.container_movie_full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container_movie_box {
+    width: 29%;
+    height: 290px;
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #284180;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container_movie_box_left {
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_movie_box_rigth {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.container_movie_box_right_row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.img_rolls_movie {
+    width: 80%;
+}
+
+.text_movie_box_rigth_data {
+    width: 70%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #284180;
+}
